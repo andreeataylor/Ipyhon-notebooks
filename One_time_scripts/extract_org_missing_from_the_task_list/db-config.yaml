@@ -1,0 +1,26 @@
+# db-config.yaml template for python
+
+risk-cloud-slave:               # Configuration name
+  host: 10.48.51.165            # Replace this
+  user: risk_reader             # Set database user, leave out password for automatic prompting at runtime
+  port: 5432                    # should be integer
+  database: sun                 # Database name
+development:
+  host: 127.0.0.1
+  user: izettle
+  password: test
+  port: 4420
+  database: sun
+# Remember to SSH to the prod db server
+risk-write:
+  host: 127.0.0.1
+  user: andreea
+  port: 8820
+  database: risk
+risk-dev:
+  host: 127.0.0.1
+  user: risk
+  password: risk
+  port: 5432
+  database: risk_dev
+
