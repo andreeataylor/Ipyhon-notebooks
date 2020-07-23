@@ -62,7 +62,7 @@ def evaluate_fraud_review_conclusions(decisional_entity, start_period, end_perio
     risk_conn = postgres_utils.get_db_connection_from_config(
         load_config.load_config(config_file, config_name='risk-write'))
     sun_conn = postgres_utils.get_db_connection_from_config(
-        load_config.load_config(config_file, 'risk-cloud-slave'))
+        load_config.load_config(config_file, 'risk-cloud-subordinate'))
 
     if start_period > end_period:
         raise Exception('The start_period must not exceed end_period.')

@@ -60,7 +60,7 @@ def main():
 
     config_file = "db-config.yaml"
     risk_conn = load_db_conn_from_config_file(config_file, 'risk-write')
-    sun_conn = load_db_conn_from_config_file(config_file, 'risk-cloud-slave')
+    sun_conn = load_db_conn_from_config_file(config_file, 'risk-cloud-subordinate')
 
     start_time = '2015-06-01'
     end_time = '2015-07-01'
